@@ -9,9 +9,9 @@ I'd appreciate if someone can clean this code up
  ]]
 
 Config = {}
-Config.otherthancars = true --Setting this true renders other than cars first person driven
-Config.forcefirstperson = true --Setting this true probably overrides config below this, thus rendering all actions in vehicle in firstperson. Setting this false and Config.firstpersonshooting allows you to drive 3rdperson but forces first person when doing driveby
-Config.firstpersonshooting = false --Set True to allow only first person shooting in CARS.
+Config.otherthancars = true --Setting this true forces everyother vehicle first person driven than cars
+Config.forcefirstperson = true --Setting this true forces every action in car first person (I suppose :D)
+Config.firstpersonshooting = false --Set True to force first person shooting in CARS. (You can still drive in any viewmode you want)
 Config.drivebyspeed = 60 -- set speed you can shoot from car (60 = you can shoot when vehicles goes under 60kmh)
 
 local notforcedfirstperson = { --Table for vehicles which are not affected Config.forcefirstperson
